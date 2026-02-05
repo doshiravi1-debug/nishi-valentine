@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #d62839;
+}
+
+h2 {
+  color: #333;
+}
+
+button {
+  background: #d62839;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #b71c1c;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 📸 Carousel */
+.carousel img {
+  width: 100%;
+  border-radius: 15px;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+/* 💕 Hearts */
+.hearts span {
+  position: absolute;
+  color: red;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10%); opacity: 1; }
+  100% { transform: translateY(110vh); opacity: 0; }
+}
